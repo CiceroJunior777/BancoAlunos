@@ -1,4 +1,10 @@
 <?php
+
+$nome_aluno = $_POST['nome'];
+$disc = $_POST['disciplina'];
+$nota1 = $_POST['N1'];
+$nota2 = $_POST['N2'];
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -9,7 +15,7 @@ try {
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "INSERT INTO alunos(Aluno, Disciplina, N1, N2)
-  VALUES ('chico', 'Ads',10, 9.0)";
+  VALUES ('$nome_aluno', '$disc', '$nota1', '$nota2')";
   // use exec() because no results are returned
   $conn->exec($sql);
   echo "Aluno Cadastrado";

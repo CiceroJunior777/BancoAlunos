@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="js/bootstrap.min.js" rel="stylesheet">
+
 </head>
 
 <body>
     <!--INÍCIO-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand">Principal</a>
+            <a class="navbar-brand">Cadastrar Aluno</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -20,14 +23,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="http://localhost/BancoAlunos/php/teste.php">Testar Conexão</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="http://localhost/BancoAlunos/php/verbanco.php">Ver cadastrados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="aba_cadastro.html">Cadastrar Novo Usuário</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -37,6 +33,28 @@
             </div>
         </div>
     </nav>
+
+
+    <!--Formulário-->
+    <form id="formulario" class="row g-3 needs-validation" action="php/inserir.php" method="post">
+        <div class="col-6">
+          <label for="nome" class="form-label">Nome do Aluno</label>
+          <input type="name" class="form-control" name="nome" id="nome" placeholder="Insira o nome do aluno"  required>
+        </div>
+        <div class="col-6">
+          <label for="disciplina" class="form-label">Disciplina</label>
+          <input type="name" class="form-control" name="disciplina" id="disciplina" placeholder="Digite a Disciplina"  required>
+        </div>
+        <div class="col-6">
+            <label for="N1" class="form-label">Nota 01</label>
+            <input type="number" class="form-control" name="N1" id="N1" placeholder="Digite a Nota 01" required>
+          </div>
+          <div class="col-6">
+            <label for="N2" class="form-label">Nota 02</label>
+            <input type="number" class="form-control" name="N2" id="N2" placeholder="Digite a Nota 02" required>
+          </div>
+        <button type="submit" class="btn btn-primary">Finalizar Cadastro</button>
+      </form>
 
 
     <!--JAVA SCRIPT-->
