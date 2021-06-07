@@ -31,7 +31,7 @@ try {
   $stmt = $conn->prepare("SELECT Aluno, ID_Aluno, Disciplina, N1, N2 FROM alunos");
   $stmt->execute();
 
-  // set the resulting array to associative
+
   $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
   foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
     echo $v;
