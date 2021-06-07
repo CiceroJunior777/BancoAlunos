@@ -18,7 +18,7 @@ try {
   VALUES ('$nome_aluno', '$disc', '$nota1', '$nota2')";
   // use exec() because no results are returned
   $conn->exec($sql);
-  echo "Aluno Cadastrado";
+  echo("Cadastro Finalizado");
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }
