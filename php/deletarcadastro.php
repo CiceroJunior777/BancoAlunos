@@ -1,9 +1,6 @@
 <?php
 
-$nome_aluno = $_POST['nome'];
-$disc = $_POST['disciplina'];
-$nota1 = $_POST['N1'];
-$nota2 = $_POST['N2'];
+$id = $_POST['idaluno'];
 
 $servername = "sql111.epizy.com";
 $username = "epiz_28780994";
@@ -12,13 +9,15 @@ $dbname = "epiz_28780994_bancoalunos";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  
+  // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $sql = "INSERT INTO alunos(Aluno, Disciplina, N1, N2)
-  VALUES ('$nome_aluno', '$disc', '$nota1', '$nota2')";
 
+  // sql to delete a record
+  $sql = "DELETE FROM alunos WHERE id=$id";
+
+  // use exec() because no results are returned
   $conn->exec($sql);
-  echo("Cadastro Finalizado");
+  echo "Aluno Deletado com Sucesso!";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }

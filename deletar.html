@@ -23,11 +23,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a class="nav-link active" aria-current="page" href="http://localhost/BancoAlunos/php/verbanco.php">Ver cadastrados</a>
+                    <a class="nav-link active" aria-current="page" href="php/verbanco.php">Ver cadastrados</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Voltar Para a Página Inicial</a>
-                  </li>
+                        <a class="nav-link active" aria-current="page" href="index.html">Voltar Para a Página
+                            Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="aba_cadastro.html">Novo Cadastro</a>
+                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Buscar Aluno" aria-label="Search">
@@ -39,26 +43,13 @@
 
 
     <!--Formulário-->
-    <form id="formulario" class="row g-3 needs-validation" action="php/inserir.php" method="post">
-        <div class="col-6">
-          <label for="nome" class="form-label">Nome do Aluno</label>
-          <input type="name" class="form-control" name="nome" id="nome" placeholder="Insira o nome do aluno"  required>
+    <form id="formulario" action="php/deletarcadastro.php" method="POST">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Insira o Id do Aluno</label>
+            <input type="int" class="form-control" name="idaluno" id="idaluno" aria-describedby="emailHelp">
         </div>
-        <div class="col-6">
-          <label for="disciplina" class="form-label">Disciplina</label>
-          <input type="name" class="form-control" name="disciplina" id="disciplina" placeholder="Digite a Disciplina"  required>
-        </div>
-        <div class="col-6">
-            <label for="N1" class="form-label">Nota 01</label>
-            <input type="number" class="form-control" name="N1" id="N1" placeholder="Digite a Nota 01" required>
-          </div>
-          <div class="col-6">
-            <label for="N2" class="form-label">Nota 02</label>
-            <input type="number" class="form-control" name="N2" id="N2" placeholder="Digite a Nota 02" required>
-          </div>
-        <button type="submit" class="btn btn-primary">Finalizar Cadastro</button>
-      </form>
-
+        <button type="submit" class="btn btn-primary">Deletar</button>
+    </form>
 
     <!--JAVA SCRIPT-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
