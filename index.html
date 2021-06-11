@@ -5,12 +5,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="js/bootstrap.min.js" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <!--Fundo-->
+    <style>
+        body {
+          background-image: url('img/fundo.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+
     <!--INÍCIO-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -23,15 +31,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="php/verbanco.php">Ver cadastrados</a>
+                        <a class="nav-link active" aria-current="page" href="php/visualizar.php">Ver cadastrados</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="aba_cadastro.html">Novo Cadastro</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar Aluno" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Procurar</button>
+                    <a class="nav-link active" aria-current="page" href="https://github.com/CiceroJunior777/BancoAlunos.git">Código no github
+                        <img src="img/git.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    </a>
+                   
                 </form>
             </div>
         </div>
