@@ -23,7 +23,7 @@
     </tr>
   </thead>
   <tbody>
-  <?php include 'php/verbanco.php';?> 
+  <?php include 'php/banco.php';?> 
   </tbody>
 </table>
 
