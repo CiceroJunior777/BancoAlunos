@@ -20,7 +20,7 @@ try {
     echo '<td>'.$v['Disciplina'].'</td>';
     echo '<td>'.$v['N1'].'</td>';
     echo '<td>'.$v['N2'].'</td>';
-    echo'</tr>';
+    echo '</tr>';
   }
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
