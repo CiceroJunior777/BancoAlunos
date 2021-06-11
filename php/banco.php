@@ -13,7 +13,7 @@ try {
 
 
   $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-  foreach($stmt->fetchAll()) as $k=>$v) {
+  foreach($stmt->fetchAll() as $k=>$v) {
     echo '<tr>';
     echo '<td>'.$v['Aluno'].'</td>';
     echo '<td>'.$v['ID_Aluno'].'</td>';
