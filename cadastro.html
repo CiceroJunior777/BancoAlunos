@@ -2,63 +2,63 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <!--INÍCIO-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand">Cadastrar Aluno</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!--INÍCIO-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Cadastrar Aluno</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <a class="nav-link active" aria-current="page" href="php/visualizar.php">Ver cadastrados</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Voltar Para a Página Inicial</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Buscar Aluno" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Procurar</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-link active" aria-current="page" href="php/visualizar.php">Ver cadastrados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Voltar Para a Página Inicial</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar Aluno" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Procurar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
 
-  <!--Formulário-->
-  <form id="formulario" class="row g-3 needs-validation" action="php/inserir.php" method="post">
-    <div class="col-6">
-      <label for="nome" class="form-label">Nome do Aluno</label>
-      <input type="name" class="form-control" name="nome" id="nome" placeholder="Insira o nome do aluno" required>
-    </div>
-    <div class="col-6">
-      <label for="disciplina" class="form-label">Disciplina</label>
-      <input type="name" class="form-control" name="disciplina" id="disciplina" placeholder="Digite a Disciplina"
-        required>
-    </div>
-    <div class="col-6">
-      <label for="N1" class="form-label">Nota 01</label>
-      <input type="int" class="form-control" max="3" name="N1" id="N1" placeholder="Digite a Nota 01" required>
-    </div>
-    <div class="col-6">
-      <label for="N2" class="form-label">Nota 02</label>
-      <input type="int" class="form-control" max="3" name="N2" id="N2" placeholder="Digite a Nota 02" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Finalizar Cadastro</button>
-  </form>
+    <!--Formulário-->
+    <form id="formulario" class="row g-3 needs-validation" action="php/inserir.php" method="post">
+        <div class="col-6">
+            <label for="nome" class="form-label">Nome do Aluno</label>
+            <input type="name" class="form-control" name="nome" id="nome" placeholder="Insira o nome do aluno" required>
+        </div>
+        <div class="col-6">
+            <label for="disciplina" class="form-label">Disciplina</label>
+            <input type="name" class="form-control" name="disciplina" id="disciplina" placeholder="Digite a Disciplina" required>
+        </div>
+        <div class="col-6">
+            <label for="N1" class="form-label">Nota 01</label>
+            <input type="int" class="form-control" max="3" name="N1" id="N1" placeholder="Digite a Nota 01" required>
+        </div>
+        <div class="col-6">
+            <label for="N2" class="form-label">Nota 02</label>
+            <input type="int" class="form-control" max="3" name="N2" id="N2" placeholder="Digite a Nota 02" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Finalizar Cadastro</button>
+    </form>
 
-  <!--JAVA SCRIPT-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+    <!--JAVA SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
